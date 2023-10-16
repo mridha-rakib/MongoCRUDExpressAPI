@@ -65,11 +65,11 @@ router.get("/:id", (req, res) => {
       date: 0,
     })
     .then((data) => {
-      // res.status(200).send(data);
-      res.status(200).json({
-        result: data,
-        message: "Success",
-      });
+      res.status(200).send(data);
+      //   res.status(200).json({
+      //     result: data,
+      //     message: "Success",
+      //   });
     })
     .catch((err) => {
       console.log(err.message);
